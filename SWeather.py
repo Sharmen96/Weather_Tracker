@@ -13,10 +13,6 @@ def get_weather(city):
 
     weather = data ['weather'][0]['main']    
     temperature = data ['main']['temp'] 
-    feels_like = data['main']['feels_like']
-    humidity = data['main']['humidity']
-    wind = data['wind']['speed']
-    desc = data['weather'][0]['description']
  
 
     return weather, f"{temperature} °C" 
@@ -29,10 +25,6 @@ demo = gr.Interface(
     outputs=[
              gr.Textbox(label="Weather"), 
              gr.Textbox(label="Temperature (°C)")
-             gr.Textbox(label="Feels Like (°C)"),   
-             gr.Textbox(label="Humidity (%)"),
-             gr.Textbox(label="Wind Speed (m/s)"),
-             gr.Textbox(label="Description")
              ],    
     title = "Sharmen's Weather App",    
     description="Get the current weather and temperature for any city." 
