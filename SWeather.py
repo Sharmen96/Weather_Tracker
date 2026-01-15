@@ -1,7 +1,7 @@
 import gradio as gr
 import requests
 
-api_key = '7aa7864a4f7b09aa8a2d45f0b49ce681'
+api_key = '7xxxxxxxxxxxxxxxxxxxxxxxx81'
 
 def get_weather(city): 
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={api_key}"
